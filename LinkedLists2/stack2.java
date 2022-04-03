@@ -1,63 +1,49 @@
 package LinkedLists2;
+import java.util.Stack;
+public class stack2 {
 
-//imports
-import java.util.ArrayList;
-import java.util.EmptyStackException;
+    static Stack<Integer> st= new Stack<>();
+    private int numbers;
 
-/**
- *  Implementation of Stack, using LinkedList (previous only).
- *  December 24, 2019
- * @author     John Mortensen
- *
- */
-
-public class stack2<T> {
-    private ArrayList<T> list = new ArrayList<T>();
-
-    //constructor
-    public stack2(){
-
-    }
-
-    //add to stack (push)
-    public void push(T data){
-        list.add(data);
-    }
-
-    //remove from stack (pop)
-    public void pop(){
-        //if list is not empty
-        if(!list.isEmpty()){
-            //remove item from list
-            list.remove(list.size()-1);
-        }
-        else{
-            System.out.println("null");
+    public static void push_digits(int number)
+    {
+        while(number != 0)
+        {
+            st.push(number % 10);
+            number = number / 10;
         }
     }
 
-    //view top of stack (peek)
-    public T peek(){
-        if(!list.isEmpty()){
-            return list.get(list.size() -1 );
+    public static String reverse_number(int number)
+    {
+
+        push_digits(number);
+        int reverse = 0;
+        int i = 1;
+
+        while (!st.isEmpty()) {
+            reverse = reverse + (st.peek() * i);
+
+            st.pop();
+            i = i * 10;
         }
-        else{
-            return null;
+        String temp = String.valueOf(reverse);
+        String newString = "";
+        for (int j = 0; temp.length() > j; j++) {
+            newString += temp.charAt(j) + " ";
         }
+
+
+        return newString;
     }
 
-    //view length of stack
-    public int length(){
-        return list.size();
-    }
+    public static void main(String[] args)
+    {
+        Object[] SL = new String[] {"1", "2", "3"};
+        QueueManager stac = new QueueManager(SL);
+        System.out.println("After: " + reverse_number(stac.getNumbers()));
 
-    //clear stack
-    public void clear(){
-        list.clear();
     }
-
-    public void display(){
-        System.out.println(list);
-    }
-
 }
+// This code is contributed by Sumit Ghosh
+
