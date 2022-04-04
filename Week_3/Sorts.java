@@ -1,4 +1,4 @@
-package Sort;// package com.foo.sort;
+package Week_3;// package com.foo.sort;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -36,9 +36,9 @@ public class Sorts {
     public static void main(String[] args) {
         int sum=0, time=0, TIMES=12, SIZE=5000;
 
-        //Bubble Sort
+        //Bubble Week_2.Sort
 
-        System.out.println("\n\n" + "Bubble Sort" + "\n\n");
+        System.out.println("\n\n" + "Bubble Week_2.Sort" + "\n\n");
         for(int i=0; i< TIMES; i++) {
             BubbleSort s = new BubbleSort(SIZE);
             for(int j = 0; j<s.getData().size(); j++) {
@@ -50,8 +50,8 @@ public class Sorts {
         System.out.println("Total Nanoseconds: " + time );
         System.out.println("Total Seconds: " + time /1000000000.0);
 
-        //Selection Sort
-        System.out.println("\n\n" + "Selection Sort" + "\n\n");
+        //Selection Week_2.Sort
+        System.out.println("\n\n" + "Selection Week_2.Sort" + "\n\n");
         sum = 0; time=0;
 
         for(int i=0; i< TIMES; i++) {
@@ -65,8 +65,8 @@ public class Sorts {
         System.out.println("Total Nanoseconds: " + time );
         System.out.println("Total Seconds: " + time /1000000000.0);
 
-        //Insertion Sort
-        System.out.println("\n\n" + "Insertion Sort" + "\n\n");
+        //Insertion Week_2.Sort
+        System.out.println("\n\n" + "Insertion Week_2.Sort" + "\n\n");
         sum = 0; time=0;
 
         for(int i=0; i< TIMES; i++) {
@@ -80,8 +80,8 @@ public class Sorts {
         System.out.println("Total Nanoseconds: " + time );
         System.out.println("Total Seconds: " + time /1000000000.0);
 
-    //Merge Sort
-    System.out.println("\n\n" + "Merge Sort" + "\n\n");
+    //Merge Week_2.Sort
+    System.out.println("\n\n" + "Merge Week_2.Sort" + "\n\n");
     sum = 0; time=0;
 
         for(int i=0; i< TIMES; i++) {

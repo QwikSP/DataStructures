@@ -1,8 +1,9 @@
+package Week_0;
 
 public class IntByReference {
         private int value;
 
-        // Hack: create IntByReference, swapToLowHighOrder and toString methods
+        // Hack: create Week_0.IntByReference, swapToLowHighOrder and toString methods
         public IntByReference(int value){
             this.value = value;
         }

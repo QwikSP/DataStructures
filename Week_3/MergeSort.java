@@ -1,4 +1,4 @@
-package Sort;
+package Week_3;
 
 import java.util.ArrayList;
 
@@ -91,7 +91,7 @@ public class MergeSort extends Sorts {
             // Find the middle point
             int m = l + (r - l) / 2;
 
-            // Sort first and second halves
+            // Week_2.Sort first and second halves
             sortS(arr, l, m);
             sortS(arr, m + 1, r);
 
@@ -108,7 +108,7 @@ public class MergeSort extends Sorts {
             // Find the middle point
             int m = l + (r - l) / 2;
 
-            // Sort first and second halves
+            // Week_2.Sort first and second halves
             sortS(arr, l, m);
             sortS(arr, m + 1, r);
 

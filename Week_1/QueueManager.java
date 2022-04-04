@@ -1,4 +1,4 @@
-package LinkedLists2;
+package Week_1;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,6 @@
-import LinkedLists2.QueueManager;
+package Week_2;
+
+import Week_1.QueueManager;
 
 public class Sort {
 

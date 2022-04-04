@@ -1,4 +1,6 @@
-package LinkedLists2;
+package Week_2;
+
+import Week_1.QueueManager;
 
 /**
  * Driver Class

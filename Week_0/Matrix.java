@@ -1,3 +1,5 @@
+package Week_0;
+
 public class Matrix {
     private final int[][] matrix;
 

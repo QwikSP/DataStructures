@@ -1,11 +1,14 @@
-import LinkedLists2.QueueTester;
-import LinkedLists2.stack2;
-import Sort.Sorts;
+import Week_2.QueueTester;
+import Week_2.stack2;
+import Week_2.Sort;
+import Week_3.Sorts;
+import Week_0.IntByReference;
+import Week_0.Matrix;
+import Week_2.Calculator;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.concurrent.RunnableFuture;
 
 public class Main {
     String title;
@@ -29,12 +32,12 @@ public class Main {
 
         Map<Integer, Main> Main = new HashMap<>();
 
-        Main.put(1, new Main("Matrix", () -> Matrix.main(null)));
-        Main.put(2, new Main("IntByReference", () -> IntByReference.main(null)));
+        Main.put(1, new Main("Week_0.Matrix", () -> Matrix.main(null)));
+        Main.put(2, new Main("Week_0.IntByReference", () -> IntByReference.main(null)));
         Main.put(3, new Main("Queue", () -> QueueTester.main(null)));
-        Main.put(4, new Main("Sort", () -> Sort.main(null)));
+        Main.put(4, new Main("Week_3", () -> Sort.main(null)));
         Main.put(5, new Main("stack", () -> stack2.main(null)));
-        Main.put(6, new Main("Calculator", () -> Calculator.main(null)));
+        Main.put(6, new Main("Week_2.Calculator", () -> Calculator.main(null)));
         Main.put(7, new Main("Sorts", () -> Sorts.main(null)));
         System.out.println("Main:");
 
