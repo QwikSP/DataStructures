@@ -32,13 +32,13 @@ public class Main {
 
         Map<Integer, Main> Main = new HashMap<>();
 
-        Main.put(1, new Main("Week_0.Matrix", () -> Matrix.main(null)));
-        Main.put(2, new Main("Week_0.IntByReference", () -> IntByReference.main(null)));
+        Main.put(1, new Main("Matrix", () -> Matrix.main(null)));
+        Main.put(2, new Main("IntByReference", () -> IntByReference.main(null)));
         Main.put(3, new Main("Queue", () -> QueueTester.main(null)));
-        Main.put(4, new Main("Week_3", () -> Sort.main(null)));
-        Main.put(5, new Main("stack", () -> stack2.main(null)));
-        Main.put(6, new Main("Week_2.Calculator", () -> Calculator.main(null)));
-        Main.put(7, new Main("Sorts", () -> Sorts.main(null)));
+        Main.put(4, new Main("Sort", () -> Sort.main(null)));
+        Main.put(5, new Main("Stack", () -> stack2.main(null)));
+        Main.put(6, new Main("Calculator", () -> Calculator.main(null)));
+        Main.put(7, new Main("Algorithms", () -> Sorts.main(null)));
         System.out.println("Main:");
 
         Boolean temp = true;
